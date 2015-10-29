@@ -2,14 +2,22 @@
 
 class foo
 {
-	protected $bar;
+    protected $bar;
+
+    function __construct() {
+    	$this->bar = 0;
+    }
+
+    function doit() {
+    	$this->bar++;
+    }
 
 	function getBar() {
-		return $bar;
+		return $this->$bar;
 	}
 
 	function setBar($val) {
-		return $bar = $val;
+		$this->bar = $val;
 	}
 }
 ?>
