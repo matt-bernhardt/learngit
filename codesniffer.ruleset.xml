@@ -8,4 +8,11 @@
 	<!-- Probably need to exclude the libs directory (externally-written code) -->
 	<exclude-pattern>/php-codesniffer/*</exclude-pattern>
 
+	<!-- Include the WordPress ruleset, with exclusions. -->
+	<rule ref="Generic">
+		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+	</rule>
+
 </ruleset>
