@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * foo
+ *
+ * @author Matt Bernhardt
+ * @link https://github.com/matt-bernhardt/learngit
+ *
+ */
 class foo
 {
     protected $bar;
