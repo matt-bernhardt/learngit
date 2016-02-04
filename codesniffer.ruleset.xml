@@ -7,6 +7,7 @@
 
 	<!-- Probably need to exclude the libs directory (externally-written code) -->
 	<exclude-pattern>/php-codesniffer/*</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
 
 	<!-- Include the WordPress ruleset, with exclusions. -->
 	<rule ref="Generic">
