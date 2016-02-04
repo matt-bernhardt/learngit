@@ -11,8 +11,11 @@
 
 	<!-- Include the WordPress ruleset, with exclusions. -->
 	<rule ref="Generic">
+		<exclude name="Generic.Files.EndFileNoNewline.Found" />
+		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine" />
 		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
 		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed" />
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
 	</rule>
 
