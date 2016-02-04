@@ -8,15 +8,15 @@
  */
 class foo
 {
-    protected $bar;
+	protected $bar;
 
-    function __construct() {
-    	$this->bar = 0;
-    }
+	function __construct() {
+		$this->bar = 0;
+	}
 
-    function doit() {
-    	$this->bar++;
-    }
+	function doit() {
+		$this->bar++;
+	}
 
 	function getBar() {
 		return $this->$bar;
