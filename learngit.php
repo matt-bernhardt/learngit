@@ -18,6 +18,10 @@ class foo
 		$this->bar++;
 	}
 
+	function undoit() {
+		$this->bar--;
+	}
+
 	function getBar() {
 		return $this->$bar;
 	}
