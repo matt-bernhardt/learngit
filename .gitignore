@@ -1,4 +1,4 @@
-
 php_errors.log
+phpcs.log
 
 vendor/
