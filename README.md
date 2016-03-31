@@ -1,4 +1,4 @@
-Learn Git (and other tools)
+### Learn Git (and other tools)
 
 [![Stories in Ready](https://badge.waffle.io/matt-bernhardt/learngit.svg?label=ready&title=Ready)](http://waffle.io/matt-bernhardt/learngit)
 [![Build Status](https://travis-ci.org/matt-bernhardt/learngit.svg?branch=master)](https://travis-ci.org/matt-bernhardt/learngit)
