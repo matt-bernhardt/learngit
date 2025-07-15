@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 /**
- * Class foo
+ * Class Foo
  *
  * @author Matt Bernhardt
  * @link   https://github.com/matt-bernhardt/learngit
  */
 
-class foo {
+class Foo {
 	protected $bar;
 
 	function __construct() {
