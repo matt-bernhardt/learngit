@@ -1,5 +1,24 @@
 {
+	"name": "matt-bernhardt/learngit",
+	"type": "project",
+	"license": "MIT",
+	"description": "A test repo for a GitHub training course",
+	"homepage": "https://github.com/matt-bernhardt/learngit",
+	"authors": [
+		{
+			"name": "Matt Bernhardt",
+			"homepage": "https://github.com/matt-bernhardt"
+		}
+	],
 	"require-dev": {
-		"squizlabs/php_codesniffer": "2.*"
+		"squizlabs/php_codesniffer": "^3"
+	},
+	"scripts": {
+		"lint": [
+			"phpcs"
+		],
+		"syntax": [
+      "find . -path ./libs -prune -o \\( -name '*.php' \\) -not -path './vendor/*' -exec php -lf {} \\;"
+		]
 	}
 }

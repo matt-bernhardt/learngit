@@ -5,18 +5,27 @@
 	<!-- Set a description for this ruleset. -->
 	<description>A custom set of code standard rules to check for problems.</description>
 
-	<!-- Probably need to exclude the libs directory (externally-written code) -->
-	<exclude-pattern>/php-codesniffer/*</exclude-pattern>
+  <!-- Scan all files in directory -->
+	<file>.</file>
+
+	<!-- Scan only PHP files -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Show colors in console -->
+  <arg value="-colors"/>
+
+  <!-- Show sniff codes in all reports -->
+  <arg value="ns"/>
+
+	<!-- Do not scan the vendor directory -->
 	<exclude-pattern>/vendor/*</exclude-pattern>
 
-	<!-- Include the WordPress ruleset, with exclusions. -->
+	<!-- Include the Generic ruleset -->
 	<rule ref="Generic">
 		<exclude name="Generic.Files.EndFileNoNewline.Found" />
 		<exclude name="Generic.Functions.OpeningFunctionBraceBsdAllman.BraceOnSameLine" />
-		<exclude name="Generic.WhiteSpace.ScopeIndent.IncorrectExact" />
-		<exclude name="Generic.WhiteSpace.ScopeIndent.Incorrect" />
 		<exclude name="Generic.WhiteSpace.DisallowTabIndent.TabsUsed" />
-		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent" />
 	</rule>
 
 </ruleset>
