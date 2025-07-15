@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 /**
  * Class foo
  *
@@ -6,8 +7,7 @@
  * @link   https://github.com/matt-bernhardt/learngit
  */
 
-class foo
-{
+class foo {
 	protected $bar;
 
 	function __construct() {
